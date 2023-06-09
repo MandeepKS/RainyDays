@@ -448,14 +448,26 @@ footer hr{
      .main-container{
         width:100%;
      }
+      /* nav logo */
 
+    .logo img{
+        height: 58px;
+        width:95px;
+    }
      .nav-desktop{
        display: none;
      }
+     
+     /* Jumbotron section */
+     .jumbotron img{
+        max-width: 95%;
+        height: 250px;
+    }
    
 }
 
 @media only screen and (max-width: 550px){
+   
    
     /* desktop navbar should be disable  */
     
@@ -469,20 +481,26 @@ footer hr{
     
   /* Jumbotron section */
      
-  .jumbotron
-  {
+  .jumbotron{
       display: grid;
-      justify-content: start;
-  }
-  
+      grid-template-columns: 2fr 2fr;
+   }
+
   .jumbotron img{
     max-width: 95%;
-    height: 210px;
-}
+    height: 250px;
+    object-fit: cover;
+    /* object-position: 100% 50%; */
+  }
+  
+ 
 
   .jumbotron-text h1{ 
+     
       
-      font-size: 20px;
+      font-size: 19px;
+     
+      
    }
 
    .jumbotron-text h3{
@@ -496,7 +514,8 @@ footer hr{
  
       padding: 7px 25px;
       margin-right: 10px;
-      font-weight: 700;
+      margin-bottom: 40px;
+      font-weight: 400;
       font-size: 10px;
       
   }
@@ -504,8 +523,9 @@ footer hr{
   .btn-outeryellow.jumbo{
       
       padding: 7px 25px;
-      font-weight: 700;
+      font-weight: 400;
       font-size: 10px;
+      margin-bottom: 40px;
   }
 
   /* End of jumbotron section */
