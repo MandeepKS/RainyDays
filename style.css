@@ -23,7 +23,7 @@ font-family: 'Istok Web', sans-serif;
 *{
   padding: 0;
   margin: 0;
-  
+
 }
 
 body{
@@ -37,17 +37,18 @@ body{
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  
-  
-  
+
+
+
 }
 
 /* Sticky header */
 header {
 	position: sticky;
-	width: 100%;
+	max-width: 100%;
 	top: 0;
 	background-color: white;
+    z-index: 10;
 }
 
 /* ------+++++++---------- */
@@ -58,24 +59,24 @@ header {
     text-decoration: none;
     background-color: var(--our-yellow);
     border: 1px solid var(--our-yellow);
-    
+
 }
 
 .btn-yellow:hover{
-    
+
     border: 1px solid var(--our-yellow);
-    background-color: var(--our-grey);      
+    background-color: transparent;
 }
 
 .btn-outeryellow{
     color: var(--our-black);
     text-decoration: none;
     border: 1px solid var(--our-yellow);
-   
+
 }
 
 .btn-outeryellow:hover{
-   background-color: var(--our-yellow); 
+   background-color: var(--our-yellow);
 }
 
 .btn-black{
@@ -84,14 +85,14 @@ header {
     background-color: var(--our-black);
 }
 /* ---end of buttons */
- 
+
 
 /* Navbar styling */
 nav{
     display: flex;
     justify-content: space-between;
     margin: 10px 250px 0 10px;
-    
+
 
 }
 
@@ -102,7 +103,7 @@ nav ul {
 
 }
 
- 
+
 nav ul li{
     margin : 0 25px;
 }
@@ -117,7 +118,7 @@ nav ul li a:hover{
    color: var(--our-yellow);
 }
 
-/* Rainy_home class is for just 'Home' menu only. 
+/* Rainy_home class is for just 'Home' menu only.
    It changes the home menu color to yellow. */
 
 .rainy_home{
@@ -131,20 +132,35 @@ nav ul li a:hover{
 
 
 /* Main body starts with jumbortron */
+
 .jumbotron
 {
-    display: flex;
-    align-items: center;
-    background-color: var(--our-grey);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-image: url("images/home/hiking_jacket.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 450px;
+
+
+    /* clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%); */
 }
 
-.jumbotron-image{
-    max-width: 100%;
-    
+.jumbotron-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color:white;
+
 }
+
 .jumbotron-text h1{
    font-family:'Istok Web', sans-serif;
    font-size: 40px;
+   text-align: right;
+   align-items: center;
 }
 .jumbotron-text-yellow{
     color:var(--our-yellow);
@@ -155,25 +171,29 @@ nav ul li a:hover{
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 15px;
-    
+
 }
+
+
 .btn-yellow.jumbo{
-   
+
     padding: 7px 40px;
     margin-right: 10px;
     font-family: 'Inder', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    
+    color: white;
+
 }
 
 
 .btn-outeryellow.jumbo{
-   
+
     padding: 7px 40px;
     font-family: 'Inder', sans-serif;
     font-weight: 400;
     font-size: 20px;
+    color: white;
 }
 
 
@@ -218,19 +238,20 @@ nav ul li a:hover{
     gap:1em;
     text-align: center;
     margin: 20px;
-    
+
 }
 
 .container-3 img{
     height: 450px;
 	width: 100%;
+    object-fit: cover;
 }
 
 .featured-products{
     /* grid-column :1/-1; means it accquires whole
       column */
     grid-column: 1/-1;
-    
+
 }
 .feature-products-card{
     display: flex;
@@ -260,7 +281,7 @@ nav ul li a:hover{
     padding: 10px 40px;
     margin: 10px 90px;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 16px;
 }
 /* ---end of container -3  */
@@ -276,6 +297,7 @@ nav ul li a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
+    padding: 5%;
 }
 
 
@@ -283,14 +305,14 @@ nav ul li a:hover{
 .container-4-sub{
     color: white;
     text-align: center;
-    
+
 }
 
 .container-4 h4{
    margin: 5% 0 1% 0;
    font-weight: 400;
    font-size: 40px;
-   
+
 }
 
 .container-4 h5{
@@ -306,7 +328,7 @@ nav ul li a:hover{
     margin:1% 0 6% 0;
     font-weight: 400;
     font-size: 24px;
-    
+
 }
 
 /* --- end of container-4 */
@@ -318,9 +340,10 @@ nav ul li a:hover{
     flex-direction: column;
     align-items: center;
     margin-top:5%;
-    width:100%;
+    max-width:100%;
     background-color: var(--background-grey);
     font-family: 'Inria Serif', serif;
+
 }
 
 .container-5 h4{
@@ -342,13 +365,13 @@ nav ul li a:hover{
 }
 
 .container-5 input{
-    width: 420px;
+    width: 35%;
     height: 50px;
     border: 1.5px solid var(--our-black);
     padding-left: 12px;
     margin: 1.5% 0 1% 0;
 
-    
+
 }
 
 .container-5 input:focus{
@@ -356,12 +379,14 @@ nav ul li a:hover{
     border: 1.5px solid var(--our-yellow);
 }
 
+
+
 .btn-black.cont-5{
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    padding: 18px 180px;
+    padding: 18px 15%;
     margin-bottom: 5%;
 }
 /* end of container-5 */
@@ -373,78 +398,132 @@ nav ul li a:hover{
 footer hr{
     margin: 1% 0.5% 1% 0.5%;
 }
-.footer
-{
-    width: 100%;
+
+footer{
+    width:100%;
+}
+.footer-nav{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
 }
 
 .social-media{
     display: flex;
-    margin-left: 70px;
+}
+
+.social-media a{
+    font-size: 20px;
+}
+
+.copyright-container{
+    background-color: var(--our-black);
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    
     
 }
 
-.footer-facebook, .footer-instagram, .footer-twitter{
-    
-    margin: 0 5px;
+.copyright-container a{
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    margin: 15px;
 }
+/* --end of footer section */
+
 
 /* Responsiveness Table and desktop */
 
 @media only screen and (max-width: 1120px){
-   
+
     /* desktop navbar should be disable  */
-    
+
      .main-container{
         max-width:100%;
-       
-     }
-    /* Jumbotron section */
-
-    .jumbotron
-    {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-    .jumbotron img{
-        max-width: 98%;
     }
 
-    .jumbotron-text h1{ 
-        font-size: 35px;
-     }
+    /* ---end of container-3 */
 
-     .jumbotron-text h3{
-        
-        font-size: 20px;
-        margin-bottom: 18px;
-        
+    /* footer */
+
+    .footer-logo,.footer-nav,.social-media{
+        display: none;
+
     }
 
-     .btn-yellow.jumbo{ 
-   
-        padding: 7px 30px;
-        margin-right: 10px;
-        font-weight: 400;
-        font-size: 15px;
-        
-    }
 
-    .btn-outeryellow.jumbo{
-        
-        padding: 7px 30px;
-        font-weight: 400;
-        font-size: 15px;
-    }
+    /* .social-media{
+       margin-bottom: 20px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     } */
+     
+    
 
-    /* End of jumbotron section */
+    
+/* end of footer */
 }
 
+@media only screen and (max-width:900px){
+
+     /* Jumbotron section */
+
+     .jumbotron
+     {
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+
+     }
+
+     .jumbotron-text h1{
+         font-size: 35px;
+      }
+
+      .jumbotron-text h3{
+
+         font-size: 20px;
+         margin-bottom: 18px;
+
+     }
+
+      .btn-yellow.jumbo{
+
+         padding: 7px 30px;
+         margin-right: 10px;
+         font-weight: 400;
+         font-size: 15px;
+
+     }
+
+     .btn-outeryellow.jumbo{
+
+         padding: 7px 30px;
+         font-weight: 400;
+         font-size: 15px;
+     }
+
+     /* End of jumbotron section */
+
+    /* Container-2 */
+     .container-2-images{
+        flex-direction: column;
+
+     }
+
+     .container-2-images h5{
+         margin: 10px 0 30px 0;
+     }
+    /* end of container -2  */
+}
 
 @media only screen and (max-width: 760px){
-   
+
     /* desktop navbar should be disable  */
-    
+
      .main-container{
         width:100%;
      }
@@ -457,76 +536,192 @@ footer hr{
      .nav-desktop{
        display: none;
      }
-     
-     /* Jumbotron section */
-     .jumbotron img{
-        max-width: 95%;
-        height: 250px;
+
+    /* ----Container-2-----  */
+
+     .container-2 p{
+        font-size: 35px;
+        line-height: 44px;
+     }
+
+    /* --end of container-2 --- */
+
+    /* -----Container-4--  */
+    .container-4{
+        background-image: url("tablet-images/home/Container_5_background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
     }
-   
+
+    .container-4 h4{
+        font-size: 30px;
+    }
+
+    .container-4 h5{
+        font-size: 13px;
+    }
+    .container-4 p{
+       font-size: 20px;
+    }
+    /* ---end of container-4-- */
+
+    /* ---Container-5 ----- */
+
+    .container-5 h4{
+     font-size: 25px;
+     line-height: 30px;
+    }
+
+    .container-5 p{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .container-5 input{
+        width: 50%;
+    }
+
+    .btn-black.cont-5{
+        padding: 18px 20%;
+    }
+    /* ---End of container-5 ---- */
+
+    /* ----footer--- */
+    .footer-nav,.footer-logo{
+        display: none;
+    }
+    /* ---end of footer--- */
 }
 
 @media only screen and (max-width: 550px){
-   
-   
+
+
     /* desktop navbar should be disable  */
-    
+
      .main-container{
         width:100%;
-        padding: 0;
+        padding-left: 5px;
+        padding-right: 5px;
         margin-right: auto;
         margin-left: auto;
      }
 
-    
+
   /* Jumbotron section */
-     
+
   .jumbotron{
-      display: grid;
-      grid-template-columns: 2fr 2fr;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      object-fit: cover;
+      background-image: linear-gradient(
+        to right,
+        hsl(0deg 0% 0% / 70%),
+        transparent 50%
+    ),url("mobile-images/home/hiking_jacket.jpg");
+      clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
    }
 
-  .jumbotron img{
-    max-width: 95%;
-    height: 250px;
-    object-fit: cover;
-    /* object-position: 100% 50%; */
-  }
   
- 
 
-  .jumbotron-text h1{ 
-     
-      
-      font-size: 19px;
-     
-      
-   }
+  .jumbotron-text h1{
+      font-size: 25px;
+     }
 
    .jumbotron-text h3{
-      
-    font-size: 13px;
+
+    font-size: 16px;
     margin-bottom: 18px;
-      
+
   }
 
-   .btn-yellow.jumbo{ 
- 
+   .btn-yellow.jumbo{
+
       padding: 7px 25px;
       margin-right: 10px;
       margin-bottom: 40px;
       font-weight: 400;
-      font-size: 10px;
-      
+      font-size: 12px;
+
   }
 
   .btn-outeryellow.jumbo{
-      
+
       padding: 7px 25px;
       font-weight: 400;
-      font-size: 10px;
-      margin-bottom: 40px;
+      font-size: 12px;
+
   }
 
   /* End of jumbotron section */
+
+
+  /* ---container-2 --- */
+   .container-2{
+    margin-top: 50px;
+   }
+  .container-2 p{
+    font-size: 25px;
+    line-height: 30px;
+ }
+  /* ----end of container-2 */
+
+   /* .....container3---- */
+    .container-3{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+   /* ---end of container-3 */
+
+   
+   /* -----Container-4--  */
+   .container-4{
+    background-image: url("mobile-images/home/Container_5_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container-4 h4{
+    font-size: 25px;
+}
+
+.container-4 h5{
+    font-size: 10px;
+}
+.container-4 p{
+    margin:1% 0 6% 0;
+   font-size: 17px;
+}
+/* ---end of container-4-- */
+
+ /* ---Container-5 ----- */
+
+ .container-5 h4{
+    font-size: 25px;
+    line-height: 30px;
+   }
+
+   .container-5 p{
+       padding-left: 3%;
+       padding-right: 3%;
+       font-size: 17px;
+       line-height: 20px;
+   }
+
+   .container-5 input{
+
+       width: 65%;
+   }
+
+   .btn-black.cont-5{
+       padding: 18px 25%;
+   }
+
+
+
+   /* ---End of container-5 ---- */
+
 }
