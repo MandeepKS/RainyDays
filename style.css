@@ -136,30 +136,37 @@ nav ul li a:hover{
 .jumbotron
 {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--our-grey);
+
+}
+
+.jumbotron-image{
     background-image: url("images/home/hiking_jacket.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
     min-height: 450px;
-
-
-    /* clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%); */
+    clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%);
 }
-
 .jumbotron-text{
+    position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    color:white;
+    align-self: center;
+    justify-self: center;
+    margin-left:40%;
+    margin-top:5%;
+
+    color:var(--our-black);
+
 
 }
 
 .jumbotron-text h1{
    font-family:'Istok Web', sans-serif;
    font-size: 40px;
-   text-align: right;
+   /* text-align: right; */
    align-items: center;
 }
 .jumbotron-text-yellow{
@@ -193,7 +200,7 @@ nav ul li a:hover{
     font-family: 'Inder', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    color: white;
+    color: var(--our-black);
 }
 
 
@@ -421,8 +428,8 @@ footer{
     list-style-type: none;
     width: 100%;
     text-align: center;
-    
-    
+
+
 }
 
 .copyright-container a{
@@ -461,10 +468,10 @@ footer{
        justify-content: center;
        align-items: center;
      } */
-     
-    
 
-    
+
+
+
 /* end of footer */
 }
 
@@ -475,8 +482,13 @@ footer{
      .jumbotron
      {
          display: grid;
-         grid-template-columns: repeat(2,1fr);
+         grid-template-columns: 2fr 1fr;
 
+     }
+
+     .jumbotron-image{
+
+        clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
      }
 
      .jumbotron-text h1{
@@ -537,6 +549,35 @@ footer{
        display: none;
      }
 
+
+     /* end of nav logo */
+
+       /* Jumbotron section */
+
+       .jumbotron
+       {
+           display: flex;
+           flex-direction: column;
+
+       }
+
+       /* Tablet size image for home page jumbotron */
+       .jumbotron-image{
+          background-image: url("tablet-images/home/hiking_jacket.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          clip-path: none;
+
+       }
+
+       .jumbotron-text{
+        margin-top: 20%;
+        color: white;
+       }
+       
+       .btn-outeryellow.jumbo{
+        color: white;
+       }
     /* ----Container-2-----  */
 
      .container-2 p{
@@ -594,6 +635,27 @@ footer{
     /* ---end of footer--- */
 }
 
+/* ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ About-Page ¤¤¤¤¤¤¤¤¤¤¤¤ */
+
+.about-jumbotron
+{
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+}
+
+.about-jumbotron-image{
+    background-image: url("images/about/about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 60%;
+    min-height: 450px;
+    clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%);
+}
+
+
+
+/* ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ End of About-Page ¤¤¤¤¤¤¤¤¤¤¤¤ */
+
 @media only screen and (max-width: 550px){
 
 
@@ -613,19 +675,21 @@ footer{
   .jumbotron{
       display: flex;
       flex-direction: column;
-      align-items: center;
+      /* align-items: center; */
       justify-content: center;
-      object-fit: cover;
-      background-image: linear-gradient(
-        to right,
-        hsl(0deg 0% 0% / 70%),
-        transparent 50%
-    ),url("mobile-images/home/hiking_jacket.jpg");
-      clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    
    }
 
-  
 
+.jumbotron-image{
+    object-fit: cover;
+    background-image: linear-gradient(
+      to right,
+      hsl(0deg 0% 0% / 70%),
+      transparent 50%
+  ),url("mobile-images/home/hiking_jacket.jpg");
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
   .jumbotron-text h1{
       font-size: 25px;
      }
@@ -675,7 +739,7 @@ footer{
     }
    /* ---end of container-3 */
 
-   
+
    /* -----Container-4--  */
    .container-4{
     background-image: url("mobile-images/home/Container_5_background.jpg");
