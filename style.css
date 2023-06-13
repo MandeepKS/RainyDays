@@ -17,6 +17,7 @@ font-family: 'Istok Web', sans-serif;
     --our-grey : #F7F7F7;
     --font-dark-grey:#BEB9AF;
     --background-grey: #EEEEEE;
+    --font-about-grey:#9D9B9B;
 }
 
 /* universal selector  */
@@ -142,10 +143,10 @@ nav ul li a:hover{
 }
 
 .jumbotron-image{
-    background-image: url("images/home/hiking_jacket.jpg");
+    background-image: url("images/home/home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 100%;
+    max-width: 90%;
     min-height: 450px;
     clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%);
 }
@@ -440,6 +441,72 @@ footer{
 }
 /* --end of footer section */
 
+/* 
+#
+#
+#
+#¤¤¤¤¤¤¤¤¤¤¤ About-Page ¤¤¤¤¤¤¤¤¤¤¤¤ 
+#
+#
+#
+#
+*/
+
+
+/* about jumbotron */
+
+.about-jumbotron
+{
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+    border: 1px solid var(--our-black);
+}
+
+.about-jumbotron-image{
+    background-image: url("images/about/about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 90%;
+    min-height: 450px;
+    clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%);
+}
+/* end of about jumbotron */
+
+
+ /* about container-2 */
+
+ .about-our-story, .about-our-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: 10% 1% 2% 1%;
+    padding: 2%;
+ }
+
+ .about-story-par, .about-product-par{
+    color: var(--font-about-grey);
+    margin-top: 2%;
+ }
+ /* end about container-2 */
+
+    /* ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ End of About-Page ¤¤¤¤¤¤¤¤¤¤¤¤ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsiveness Table and desktop */
 
@@ -479,17 +546,7 @@ footer{
 
      /* Jumbotron section */
 
-     .jumbotron
-     {
-         display: grid;
-         grid-template-columns: 2fr 1fr;
-
-     }
-
-     .jumbotron-image{
-
-        clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
-     }
+   
 
      .jumbotron-text h1{
          font-size: 35px;
@@ -532,12 +589,23 @@ footer{
     /* end of container -2  */
 }
 
+/* 
+*
+************ 760px media query *********
+*
+*
+ */
 @media only screen and (max-width: 760px){
 
     /* desktop navbar should be disable  */
 
      .main-container{
         width:100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        
      }
       /* nav logo */
 
@@ -563,9 +631,10 @@ footer{
 
        /* Tablet size image for home page jumbotron */
        .jumbotron-image{
-          background-image: url("tablet-images/home/hiking_jacket.jpg");
+          background-image: url("tablet-images/home/home.jpg");
           background-repeat: no-repeat;
           background-size: cover;
+          max-width: 100%;
           clip-path: none;
 
        }
@@ -633,28 +702,43 @@ footer{
         display: none;
     }
     /* ---end of footer--- */
+
+
+    /* ¤
+    ¤
+    ¤
+    ¤¤
+    ¤¤
+    ¤¤¤¤¤¤¤¤
+    ¤¤¤¤¤¤¤¤¤¤¤¤¤ About-Page ¤¤¤¤¤¤
+    ¤
+    ¤¤
+    ¤¤¤¤ */
+
+    .about-jumbotron{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white;
+    }
+    .about-jumbotron-image{
+        background-image: url("tablet-images/about/about.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        clip-path: none;
+        max-width: 100%;
+   }
+
+   /* ############## end of about page ############ */
 }
 
-/* ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ About-Page ¤¤¤¤¤¤¤¤¤¤¤¤ */
-
-.about-jumbotron
-{
-    display: grid;
-    grid-template-columns: 2fr 0.5fr;
-}
-
-.about-jumbotron-image{
-    background-image: url("images/about/about.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 60%;
-    min-height: 450px;
-    clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%);
-}
 
 
 
-/* ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ End of About-Page ¤¤¤¤¤¤¤¤¤¤¤¤ */
+/* 
+¤
+¤ *********** 550px media query **********
+¤
+¤ */
 
 @media only screen and (max-width: 550px){
 
@@ -687,7 +771,7 @@ footer{
       to right,
       hsl(0deg 0% 0% / 70%),
       transparent 50%
-  ),url("mobile-images/home/hiking_jacket.jpg");
+  ),url("mobile-images/home/home.jpg");
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 }
   .jumbotron-text h1{
@@ -748,16 +832,16 @@ footer{
 }
 
 
-.container-4 h4{
-    font-size: 25px;
+    .container-4 h4{
+     font-size: 25px;
 }
 
-.container-4 h5{
-    font-size: 10px;
+    .container-4 h5{
+     font-size: 10px;
 }
-.container-4 p{
-    margin:1% 0 6% 0;
-   font-size: 17px;
+    .container-4 p{
+      margin:1% 0 6% 0;
+     font-size: 17px;
 }
 /* ---end of container-4-- */
 
@@ -788,4 +872,27 @@ footer{
 
    /* ---End of container-5 ---- */
 
+   /* ########## About-page ####### */
+   
+    .about-jumbotron-image{
+        background-image: linear-gradient(
+            to right,
+            hsl(0deg 0% 0% / 70%),
+            transparent 50%
+        ),url("mobile-images/about/about.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+
+   }
+
+   .about-txt{
+     margin-top: 40%;
+   }
+    
+   .about-txt h1{
+    font-size: 30px;
+   }
+   /* ¤¤¤¤¤¤¤¤ end of about-page */
 }
