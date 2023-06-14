@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Product Detail | RainyDays</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keyword" content="rain jackets, jackets, rain wear, clothing">
-    <meta name="description" content="Rainy Day's product detail page."/>
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/076a43e25b.js" crossorigin="anonymous"></script>
-    <!--Stylesheet link -->
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Product Detail | RainyDays</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keyword" content="rain jackets, jackets, rain wear, clothing">
+        <meta name="description" content="Rainy Day's product detail page."/>
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/076a43e25b.js" crossorigin="anonymous"></script>
+        <!--Stylesheet link -->
+        <link rel="stylesheet" href="style.css">
+    </head>
 
 
-<!--body part-->
-<body>
-    <!-- main container-->
-    <div class="main-container">
+    <!--body part-->
+    <body>
+        <!-- main container-->
+        <div class="main-container">
 
             <header>
            <!--navbar -->
@@ -40,27 +40,62 @@
             </header> 
             <!-- Product detail container-1 -->
             <div class="productdetail-container-1">
-                <!-- product image -->
-                <div class="prodt-detail-img">
-                    <!-- img from css -->
-                </div>
-                <!-- product-description -->
-                <div class="prodt-description">
-                    <h1 class="prodt-title">NOIR FEMME</h1>
-                    <h3 class="prodt-price">NOK 2 950</h3>
-                    <h5 class="prodt-tax-detail">inc. all taxes and duties</h5>
-                    <p class="prodt-desc">Our first women’s raincoat evolved from T-Michael’s own archive. 
-                        Feminine yet masculine. This piece can be worn either well fitted or
-                        loose yet sculptural. Soft and sensual with dark undertones.</p>
-                </div>
-            </div>
+                    <!-- product image -->
+                    <div class="prodt-detail-img">
+                        <!-- img from css -->
+                    </div>
+                    <!-- product-description -->
+                    <div class="prodt-description">
+                        <h1 class="prodt-title">NOIR FEMME</h1>
+                        <h3 class="prodt-price">NOK 2 950</h3>
+                        <h5 class="prodt-tax-detail">inc. all taxes and duties</h5>
+                        <p class="prodt-desc">Our first women’s raincoat evolved from T-Michael’s own archive. 
+                            Feminine yet masculine. This piece can be worn either well fitted or
+                            loose yet sculptural. Soft and sensual with dark undertones.</p>
+                            
+                        <!-- color option -->
+                        <label for="color-option">COLOR:</label><br>
+                        <select name="color-option" id="color-option">
+                                <option value="MIXED DARK BLACK">MIXED DARK BLACK</option>
+                                <option value="MIXED DARK BLUE">MIXED DARK BLUE</option>
+                                <option value="BLACK">BLACK</option>
+                                <option value="WHITE">WHITE</option>
+                        </select>
+                        
+                        <!-- size -->
+                        <span class="prodt-size">
+                            <a href="#">XS</a>
+                            <a href="#"><span class="highlighted-size">S</span></a>
+                            <a href="#">M</a>
+                            <a href="#">L</a>
+                            <a href="#">XL</a>
+                            <a href="#">XXL</a>
+                        </span>
+                        <!-- Add to cart -->
+                        <a href="#" class="btn-yellow product-btn">ADD TO CART</a>
+                    </div> 
+                    
+             </div>
             <!-- end of product-detail container -1 -->
+
+
+              <!-- container 5 -->
+        <div class="container-5">
+            <h4>Be first in line</h4>
+            <p>Keep up to date on product launches and be first in line<br>
+                for limited edition pieces, collabs and more. Subscribe <br>
+               to our newsletter and we got you covered.</p>
+               <input type="email" name="email" placeholder="EMAIL">
+               <a href="#" class="btn-black cont-5">SIGN UP</a>
+        </div>
+        <!-- end of container 5 -->
+            <hr>
         </div>
         <!--end of main container-->    
             
-             <hr>
+             
+        <!-- footer navbar -->
         <footer>
-             <!-- footer navbar -->
             <nav>
                  <div class="footer-logo">
                     <img src="/images/footer/Footer_RainyDays_Logo.svg" alt="">
@@ -82,11 +117,11 @@
             </nav>
              <!-- end of footer navbar -->
           
+             <div class="copyright-container">
+                 <a href="#">&copy; 2023 RainyDays</a>
+            </div>
+        </footer> 
+    </body>
+</html>
    
             
-        <div class="copyright-container">
-                <a href="#">&copy; 2023 RainyDays</a>
-        </div>
-    </footer>
-</body>
-</html>

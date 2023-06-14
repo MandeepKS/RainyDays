@@ -562,10 +562,86 @@ footer{
 }
 
 
+/* ###### END OF CONTACT PAGE ####### */
 
 
 
 
+
+
+
+
+/* 
+*
+*
+* ######## PRODUCT DETAIL PAGE ######
+*
+*
+ */
+
+ .productdetail-container-1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 450px;
+    gap: 3%;
+    
+
+    
+}
+ 
+ .prodt-price{
+    font-size: 15px;
+    margin-bottom: 1%;
+ }
+
+ .prodt-tax-detail{
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 2%;
+ }
+
+ .prodt-desc{
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    padding-right: 5%;
+ }
+ .prodt-detail-img{
+    
+    background-image: url("images/home/Noir_Femme_Raincoat.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto; 
+    width: auto; 
+    max-width: 350px; 
+    max-height: 450px;
+    
+ }
+
+
+ .prodt-size{
+    display: flex;
+}
+
+.prodt-size a{
+    text-decoration: none;
+    margin: 2% 2% 3% 0;
+    padding: 1%;
+    color: var(--our-black);
+    border: 1px solid var(--our-black);
+ }
+
+ .prodt-size a:hover ,li:hover{
+     
+    color: var(--our-yellow);
+ }
+
+ /* Product Add to cart button */
+
+ .product-btn{
+    padding: 1% 11%;
+ }
 
 
 
