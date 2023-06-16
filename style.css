@@ -643,13 +643,41 @@ footer{
     padding: 1% 11%;
  }
 
+ /* ### End of Product Detail Page ##### */
 
 
 
 
 
+/* 
+#
+#
+#
+########## CHECKOUT PAGE ##############
+#
+#
+#
+# */
 
+.checkout-title-container-1{
+    text-align: center;
+}
 
+.checkout-container-2{
+    display: flex;
+    gap:3%;
+}
+
+.section-1{
+    width:40%;
+}
+/* ## Image order preview title ## */
+.order-preview img{
+    height: auto; 
+    width: auto; 
+    max-width: 150px; 
+    max-height: 250px;
+}
 
 
 /* Responsiveness Table and desktop */
