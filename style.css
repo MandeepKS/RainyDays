@@ -107,6 +107,7 @@ nav .nav-mobile{
     margin-left: -3%;
     margin-top: 8%;
     position: absolute;
+    height: 800px;
     background-color: var(--our-grey);
    
 
