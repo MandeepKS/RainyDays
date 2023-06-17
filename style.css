@@ -60,6 +60,7 @@ header {
     text-decoration: none;
     background-color: var(--our-yellow);
     border: 1px solid var(--our-yellow);
+    transition: all 0.4s;
 
 }
 
@@ -73,7 +74,7 @@ header {
     color: var(--our-black);
     text-decoration: none;
     border: 1px solid var(--our-yellow);
-
+    transition: all 0.4s;
 }
 
 .btn-outeryellow:hover{
@@ -113,6 +114,7 @@ nav ul li a {
     font-weight:bold;
     font-size: 15px;
     color : var(--our-black);
+    transition: all 0.4s;
 }
 
 nav ul li a:hover{
@@ -661,6 +663,7 @@ footer{
 
 .checkout-title-container-1{
     text-align: center;
+    margin-bottom: 5%;
 }
 
 .checkout-container-2{
@@ -671,6 +674,14 @@ footer{
 .section-1{
     width:40%;
 }
+.section-1 p{
+    margin-bottom: 2%;
+}
+.section-1 input{
+    width: 100%;
+    margin-bottom: 3%;
+    padding: 1%;
+}
 /* ## Image order preview title ## */
 .order-preview img{
     height: auto; 
@@ -678,6 +689,43 @@ footer{
     max-width: 150px; 
     max-height: 250px;
 }
+.section-3{
+    width:50%;
+}
+.section-3,.section-2{
+    margin-top: 5%;
+}
+
+.checkout-prodt-price{
+    margin-top: 5%;
+}
+
+.checkout-prodt-shipping,.checkout-prodt-total-price,.checkout-button{
+    margin-left: 50%;
+}
+
+.checkout-prodt-total-price{
+    margin-bottom: 3%;
+}
+.checkout-button{
+    padding: 1%;
+}
+
+.shipping-free,.price-in-krone{
+   margin-left: 15%;
+}
+
+.credit-debit-card{
+    margin: 2% 0 3% 10%;
+   
+}
+.credit-card-pay{
+    padding: 2% 10%;
+    font-size: 18px;
+    font-weight: 700;
+   
+}
+
 
 
 /* Responsiveness Table and desktop */

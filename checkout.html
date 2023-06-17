@@ -53,27 +53,32 @@
                     <!-- input form -->
                     <!-- email -->
                     <div>
+                        <label for="email">email</label>
                         <input type="email" name="email" placeholder="NAME@RAINYDAYS.NO">
                     </div>
 
                     <!-- input full-name -->
                     <div>
+                        <label for="full-name">full-name</label>
                         <input type="text" name="fullname" placeholder="FULL NAME">
                     </div>
 
                     <!-- phone  -->
                     <div>
+                        <label for="tel">tel</label>
                         <input type="tel" name="phone" placeholder="+47 4111112">
                     </div>
 
                     
                     <!-- Adress -->
-                    <div>
+                    <div>       
+                        <label for="address">address</label>
                         <input type="text" name="address" id="address" placeholder="ADDRESS">
                     </div>
 
                     <!-- Town -->
                     <div>
+                        <label for="town">town</label>
                         <input type="text" name="town" id="town" placeholder="TOWN">
                     </div>
                 </section>
@@ -81,7 +86,7 @@
 
             
                 <!-- Section-2 Order preview -->
-                <section class="checkout-section-2">
+                <section class="section-2">
                    <h6 class="order-preview-title">Your Order</h6>
                    
                    <!-- preview-img-->
@@ -89,57 +94,63 @@
                     <img src="images/home/Noir_Femme_Raincoat.png" alt="Noir_Femme_Raincoat">
                     </div>
                     
-                  </section>  
+                </section>  
                   <!--end of section-2  -->
 
                     <!-- section-3 order preview detail -->
-                    <section>
-                    <div class="order-preview-product-detail">
-                        <h2 class="checkout-produt-title">NOIR FEMME</h2>
-                        <p class="checkout-prodt-size">Size:S</p>
-                        <p class="checkout-prodt-color">Color: Mixed Dark Blue</p>
-                        <p class="checkout-prodt-quantity">Quantity: 1</p>
-                        <h3 class="checkout-prodt-price">NOK 2 950</h3>
-                        <hr>
-                        <p>Shipping : Free</p>
-                        <h4>Total  NOK 2 950</h4>
-                        <a href="collection.html" class="btn-outeryellow">CONTINUE SHOPPING</a>
-                   </div>
+                    <section class="section-3">
+                        <div class="order-preview-product-detail">
+                            <h2 class="checkout-produt-title">NOIR FEMME</h2>
+                            <p class="checkout-prodt-size">Size:S</p>
+                            <p class="checkout-prodt-color">Color: Mixed Dark Blue</p>
+                            <p class="checkout-prodt-quantity">Quantity: 1</p>
+                            <h3 class="checkout-prodt-price">NOK 2 950</h3>
+                            <hr>
+                            <p class="checkout-prodt-shipping">Shipping : <span class="shipping-free">Free</span></p>
+                            <h4 class="checkout-prodt-total-price">Total <span class="price-in-krone">NOK 2 950</span></h4>
+                            <a href="collection.html" class="btn-outeryellow checkout-button">CONTINUE SHOPPING</a>
+                        </div>
+                    </section>
+                    <!--end of section-3 -->
                   
-                </section>
-                <!--end of section-3 -->
             </div>
             <!-- End of Checkout container-2 -->
              
             <!-- Container -3 -->
-            <div class="checkout-container-3">
+            
                 <!-- Payment method -->
                 
                 <p class="payment-method-title">Payment method</p>
                 <hr>
-            
                 <!-- visa Card -->
-                <input type="radio" name="visa" id="visa" value="Visa">
-                <img src="images/checkout/visa-logo.png" alt="visa">
-               
-                <!-- mastercard -->
-                <input type="radio" name="mastercard" id="mastercard" value="Mastercard">
-                <img src="images/checkout/mastercard-logo.png" alt="mastercard">
+                <div class="credit-debit-card">
                 
                 <!-- vipps -->
-                <input type="radio" name="vipps" id="vipps" value="Vipps">
-                <!-- <img src="images/checkout/vipps-logo.png" alt="vipps"> -->
-                
-                <!-- paypal -->
-                <input type="radio" name="paypal" id="paypal" value="paypal">
-                <!-- <img src="images/checkout/paypal-logo.png" alt="paypal"> -->
+                <input type="radio" name="card_payment" id="vipps" value="Vipps">
+                <img src="images/checkout/vipps-logo.png" alt="vipps">
+                </div>
+                <!-- end of payment method -->
                 
                 <!-- payment button -->
-                <a href="paymentsucessfull.html" class="btn-yellow">Pay Order</a>
-            </div>
-            <!-- end of payment method -->
+                <div><a href="paymentsucessfull.html" class="btn-yellow credit-card-pay">Pay Order</a></div>
+                
             
+                
+                
             
+        
+        <!-- container 4 -->
+        <!-- this container basically inherit from index.html.
+             thats why it is container-5 -->
+        <div class="container-5">
+            <h4>Be first in line</h4>
+            <p>Keep up to date on product launches and be first in line<br>
+                for limited edition pieces, collabs and more. Subscribe <br>
+               to our newsletter and we got you covered.</p>
+               <input type="email" name="email" placeholder="EMAIL">
+               <a href="#" class="btn-black cont-5">SIGN UP</a>
+        </div>
+        <!-- end of container 5 -->    
 
 
             <hr>
