@@ -762,6 +762,11 @@ footer{
     font-weight: 700;
 
 }
+
+.checkout-prodt-size,.checkout-prodt-color,.checkout-prodt-quantity,.checkout-section1-subtitle{
+    font-weight: 300;
+    font-size: 15px;
+}
  /* ### End of CHECK-OUT Page ##### */
 
 
@@ -869,6 +874,24 @@ footer{
         width: 100%;
     }
 
+    /* ####End of contact page */
+
+
+
+
+    /*######
+    ###
+    ###
+    ### Check-Out.html page 
+    ##
+    #
+    # */
+
+    .checkout-prodt-shipping,.checkout-prodt-total-price,.checkout-button{
+        margin-left: 0;
+    }
+
+   
 }
 
 /*
@@ -1021,9 +1044,26 @@ footer{
    }
 
    /* ############## end of about page ############ */
+
+
+
+  /*######
+    ###
+    ###
+    ### Check-Out.html page 
+    ##
+    #
+    # */
+
+    .checkout-produt-title{
+        font-size: 18px;
+    }
+    
+    .checkout-prodt-price{
+        font-size: 16px;
+    }
+   /* ### end of checkout page #### */
 }
-
-
 
 
 /*
@@ -1190,4 +1230,50 @@ footer{
     font-size: 30px;
    }
    /* ¤¤¤¤¤¤¤¤ end of about-page */
+
+    /*######
+    ###
+    ###
+    ### Check-Out.html page 
+    ##
+    #
+    # */
+
+    .checkout-title-container-1 h1{
+        font-size: 25px;
+    }   
+    
+    .section-1 h2{
+        font-size:18px;
+    }
+
+    .section-1 input{
+        width: 100%;
+        margin: 0%;
+        padding: 1%;
+    }
+
+    .checkout-container-2{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .payment-method-title{
+        text-align: center;
+        margin-top: 7%;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .credit-debit-card,.credit-card-pay{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: -3%;
+    }
+
+  
 }
