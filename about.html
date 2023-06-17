@@ -21,21 +21,37 @@
 
          <header>
          <!--navbar -->
-         <nav>
+        <!--navbar -->
+        <nav class="navbar"> 
+            
+            <input type="checkbox" id="menu-checkbox">
+            <label class="hamburger-open" for="menu-checkbox"><i class="fa fa-bars fa-2x"></i></label>
             <!--Logo-->
             <div class="logo">
              <a href="index.html"><img src="/images/header/RainyDays_Logo.svg" alt="Rainy Day Logo"></a>
             </div>
+            
+            <!-- Mobile version navbar -->
+            <ul id="mobile-nav" class="nav-mobile">
+                <li><a href="index.html" class="rainy_home"><i class="fa-solid fa-house"></i> HOME</a></li>
+                <li><a href="collection.html"><i class="fa-solid fa-shirt"></i> COLLECTION</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-user-group"></i> ABOUT</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-phone"></i> CONTACT</a></li>
+                <li><a href="checkout.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> CART</a></li>
+            </ul>
+                
 
-         <ul class="nav-desktop">
-            <li><a href="index.html" class="rainy_home">HOME</a></li>
-            <li><a href="collection.html">COLLECTION</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="checkout.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-            <li><a href="#" ><i class="fa-solid fa-magnifying-glass"></i> </a></li>
-         </ul>
-         </nav>
+            <!-- Desktop version navbar -->
+            <ul class="nav-desktop">
+                <li><a href="index.html" class="rainy_home">HOME</a></li>
+                <li><a href="collection.html">COLLECTION</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="checkout.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <li><a href="#" ><i class="fa-solid fa-magnifying-glass"></i> </a></li>
+            </ul>
+             
+        </nav>
          <!--end navbar-->
          </header> 
         
@@ -85,7 +101,7 @@
         <footer>
             <nav>
                  <div class="footer-logo">
-                    <img src="/images/footer/Footer_RainyDays_Logo.svg" alt="">
+                    <img src="/images/footer/Footer_RainyDays_Logo.svg" alt="Footer-rainy-days-logo">
                  </div>
                 <div class="footer-navbar-ul">  
                     
