@@ -96,6 +96,7 @@ nav{
     justify-content: space-between;
     margin: 1% 5% 0 1%;
     
+    
 }
 
 /* ## Mobile navbar menu ## */
@@ -289,8 +290,8 @@ nav ul li a:hover{
 }
 
 .container-3 img{
-    height: 450px;
-	width: 100%;
+    max-height: auto;
+	max-width: 100%;
     object-fit: cover;
 }
 
@@ -315,7 +316,6 @@ nav ul li a:hover{
 }
 
 .feature-products-card p{
-    font-weight: 600px;
     font-size: 17px;
     line-height: 21.78px;
     margin-top: 10px;
@@ -326,9 +326,9 @@ nav ul li a:hover{
 
 .btn-yellow.cart{
     padding: 10px 40px;
-    margin: 10px 90px;
-    font-weight: 600;
-    font-size: 12px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 14px;
     line-height: 16px;
 }
 /* ---end of container -3  */
@@ -768,6 +768,27 @@ footer{
  /* ### End of CHECK-OUT Page ##### */
 
 
+
+
+/* 
+#######################################
+#                                     #
+#                                     #
+#   #### PAYMENT SUCESSFULL #######   #
+#  #                               #  #
+# #                                 # #
+#######################################
+ */
+
+ .paymentsucessfull{
+    display: grid;
+    grid-template-columns: 2fr;
+    margin-top: 15%;
+    background-color: var(--our-grey);
+    
+}
+
+
 /* Responsiveness Table and desktop */
 
 @media only screen and (max-width: 1120px){
@@ -1064,6 +1085,16 @@ footer{
         font-size: 16px;
     }
    /* ### end of checkout page #### */
+
+
+   /* ### PAYMENT SUCESSFULL PAGE */
+ 
+   .paymentsucessfull-txt{
+    color: var(--our-black);
+}
+   /* ### END OF PAYMENT SUCESSFULL PAGE */
+
+
 }
 
 
@@ -1156,6 +1187,7 @@ footer{
     .container-3{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+        
     }
    /* ---end of container-3 */
 
@@ -1303,4 +1335,14 @@ footer{
         padding: 3%;
     }
   
+     /* #### END Product detail page ### */
+
+    /* ### PAYMENT SUCESSFULL PAGE */
+ 
+   .paymentsucessfull{
+    margin-top: 30%;
+    margin-right: 5%;
+    margin-bottom: 50%;
+}
+   /* ### END OF PAYMENT SUCESSFULL PAGE */
 }
