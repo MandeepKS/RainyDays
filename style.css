@@ -621,7 +621,7 @@ footer{
  .productdetail-container-1{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    height: 450px;
+    height: auto;
     gap: 3%;
 
 
@@ -641,19 +641,17 @@ footer{
 
  .prodt-desc{
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 300;
     margin-right: 2%;
     margin-bottom: 3%;
     padding-right: 5%;
  }
- .prodt-detail-img{
-
-    background-image: url("images/home/Noir_Femme_Raincoat.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 350px;
-    max-height: 450px;
-
+ .prodt-detail img{
+   
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+    
  }
 
 
@@ -719,10 +717,12 @@ footer{
 }
 /* ## Image order preview title ## */
 .order-preview img{
-    height: auto;
-    width: auto;
-    max-width: 150px;
-    max-height: 250px;
+    /* height: auto;
+    width: auto; */
+    max-width: 90%;
+    max-height: 200px;
+
+    margin-left: 3%;
 }
 .section-3{
     width:50%;
@@ -893,19 +893,6 @@ footer{
 
 
 
-    /* 
-    #
-    #
-    #### PRODUCTDETAIL ######
-    #
-    # */
-   
-    .prodt-detail-img{
-       
-        max-width: 95%;
-        max-height: 450px;
-        margin: 0px auto;
-    }
 }
 
 /*
@@ -1274,7 +1261,7 @@ footer{
    
     .section-2 {
         position:absolute;
-        margin-top: -70%;
+        margin-top: -83%;
         margin-left: -50% ;
     }
 
@@ -1302,6 +1289,18 @@ footer{
         justify-content: center;
         margin-left: -3%;
     }
+   
+    /* End of Checkout page  */
 
+
+    /* #### Product detail page ### */
+
+    .productdetail-container-1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin: 2%;
+        padding: 3%;
+    }
   
 }
