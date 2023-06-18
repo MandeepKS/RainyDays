@@ -44,13 +44,13 @@ body{
 }
 
 /* Sticky header */
-header {
+/* header {
 	position: sticky;
 	max-width: 100%;
 	top: 0;
 	background-color: white;
-    z-index: 10;
-}
+    z-index: 200;
+} */
 
 /* ------+++++++---------- */
 
@@ -95,8 +95,7 @@ nav{
     display: flex;
     justify-content: space-between;
     margin: 1% 5% 0 1%;
-    
-    
+	
 }
 
 /* ## Mobile navbar menu ## */
@@ -110,8 +109,7 @@ nav .nav-mobile{
     position: absolute;
     height: 800px;
     background-color: var(--our-grey);
-   
-
+    
 }
 
  .hamburger-open,#menu-checkbox {
@@ -176,13 +174,13 @@ nav .footer-nav li,nav .social-media{
 /* Rainy_home class is for just 'Home' menu only.
    It changes the home menu color to yellow. */
 
-.rainy_home{
+/* .rainy_home{
     color: var(--our-yellow);
 }
 
 .rainy_home:hover{
    color:var(--our-black);
-}
+} */
 /* end of navbar */
 
 
@@ -244,7 +242,7 @@ nav .footer-nav li,nav .social-media{
     font-family: 'Inder', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    color: white;
+    
 
 }
 
@@ -276,7 +274,7 @@ nav .footer-nav li,nav .social-media{
     font-size: 45px;
     line-height: 54px;
     text-align: center;
-    color:var(--font-dark-grey);
+    color:var(--our-black);
 }
 
 .container-2 p span{
