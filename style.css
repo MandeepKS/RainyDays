@@ -38,7 +38,7 @@ body{
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-
+  overflow: hidden;
 
 
 }
@@ -651,8 +651,6 @@ footer{
     background-image: url("images/home/Noir_Femme_Raincoat.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
-    width: auto;
     max-width: 350px;
     max-height: 450px;
 
@@ -890,8 +888,24 @@ footer{
     .checkout-prodt-shipping,.checkout-prodt-total-price,.checkout-button{
         margin-left: 0;
     }
-
    
+    /* ##### END OF CHECKOUT PAGE ##### */
+
+
+
+    /* 
+    #
+    #
+    #### PRODUCTDETAIL ######
+    #
+    # */
+   
+    .prodt-detail-img{
+       
+        max-width: 95%;
+        max-height: 450px;
+        margin: 0px auto;
+    }
 }
 
 /*
