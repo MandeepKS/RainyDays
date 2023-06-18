@@ -114,8 +114,6 @@ nav .nav-mobile{
 
 }
 
-
-
  .hamburger-open,#menu-checkbox {
     display: none;
   }
@@ -147,6 +145,10 @@ nav .nav-desktop {
 nav .nav-desktop li{
     margin : 0 25px;
 }
+
+nav ul {
+    list-style-type: none;
+}
 nav ul li a {
     text-decoration: none;
     font-weight:bold;
@@ -158,6 +160,18 @@ nav ul li a {
 nav ul li a:hover{
    color: var(--our-yellow);
 }
+
+/* Footer nav-menu */
+
+nav .footer-nav, nav .social-media{
+    display: flex;
+    flex-direction: column;
+}
+nav .footer-nav li,nav .social-media{
+    padding: 2%;
+}
+
+/* End of footer navmenu */
 
 /* Rainy_home class is for just 'Home' menu only.
    It changes the home menu color to yellow. */
@@ -791,37 +805,7 @@ footer{
 
 /* Responsiveness Table and desktop */
 
-@media only screen and (max-width: 1120px){
 
-    /* desktop navbar should be disable  */
-
-     .main-container{
-        max-width:100%;
-    }
-
-    /* ---end of container-3 */
-
-    /* footer */
-
-    .footer-logo,.footer-nav,.social-media{
-        display: none;
-
-    }
-
-
-    /* .social-media{
-       margin-bottom: 20px;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-     } */
-
-
-
-
-/* end of footer */
-}
 
 @media only screen and (max-width:900px){
 
@@ -955,7 +939,21 @@ footer{
        
     }
 
-     /* end of nav logo */
+     /* end of mobile navbar */
+
+
+     /* footer navbar */
+      nav .footer-nav{
+        display: none;
+      }
+
+      nav .social-media{
+        display: grid;
+        grid-template-columns: 3fr 3fr 2fr;
+        justify-items: center;
+        width: 100%;
+      }
+     /* end of footer navbar */
 
        /* Jumbotron section */
 
