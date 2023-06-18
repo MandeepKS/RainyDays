@@ -929,11 +929,12 @@ footer{
     .hamburger-open{
         display: inline;
         cursor: pointer;
-        z-index: 10;
+        z-index: 20;
      }
      
     #menu-checkbox:checked ~ #mobile-nav{
        display: flex;
+       z-index: 10;
        
     }
 
