@@ -940,18 +940,6 @@ footer{
      /* end of mobile navbar */
 
 
-     /* footer navbar */
-      nav .footer-nav{
-        display: none;
-      }
-
-      nav .social-media{
-        display: grid;
-        grid-template-columns: 3fr 3fr 2fr;
-        justify-items: center;
-        width: 100%;
-      }
-     /* end of footer navbar */
 
        /* Jumbotron section */
 
@@ -1031,10 +1019,22 @@ footer{
     /* ---End of container-5 ---- */
 
     /* ----footer--- */
-    .footer-nav,.footer-logo{
+    .footer-logo{
         display: none;
     }
-    /* ---end of footer--- */
+    
+
+     nav .footer-nav{
+        display: none;
+      }
+
+      nav .social-media{
+        display: grid;
+        grid-template-columns: 3fr 3fr 2fr;
+        justify-items: center;
+        width: 100%;
+      }
+     /* end of footer navbar */
 
 
     /* ¤
@@ -1116,7 +1116,11 @@ footer{
    nav .nav-mobile{
     margin-top: 13%;
    }
-
+   
+   nav .social-media li a{
+    font-size: 15px;
+   }
+   
   /* Jumbotron section */
 
   .jumbotron{
