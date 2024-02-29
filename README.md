@@ -7,4 +7,4 @@
 
 "A RainyDays sells raincoats tailored for specific age groups of men and women."
 
-- 25-50 age group
+- Men & Women 25-50 age group
