@@ -17,4 +17,4 @@
 - [CSS](https://www.w3schools.com/css/default.asp)
 
 ## Tool used
-- [Vscode](https://code.visualstudio.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
