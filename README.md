@@ -21,3 +21,10 @@
 
 ### Web Hosting Link
 - [RainyDays](https://rainydays-mks.netlify.app/)
+
+## Acknowledgements
+I’m very grateful to my (Microsoft teams) group. The
+student community on teams are very helpful. I always
+got help and support that I needed.
+I would like to say thanks to our teachers Bonita and
+MJ!
