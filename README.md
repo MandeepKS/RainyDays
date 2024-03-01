@@ -9,5 +9,5 @@
 
 - Men & Women 25-50 age group
 
-## Designed
+## Designed With
 - [Figma](https://www.figma.com/)
