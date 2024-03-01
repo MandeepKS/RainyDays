@@ -11,3 +11,6 @@
 
 ## Designed With
 - [Figma](https://www.figma.com/)
+
+## Built With
+- [HTML](https://www.w3schools.com/html/)
